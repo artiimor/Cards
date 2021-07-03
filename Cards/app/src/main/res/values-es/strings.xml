@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tarjetas</string>
+    <string name="question_text">Tree</string>
+    <string name="answer_text">Árbol</string>
+    <string name="answer_button_text">Ver respuesta</string>
+    <string name="easy_button_title">Fácil</string>
+    <string name="doubt_button_title">Dudo</string>
+    <string name="difficult_button_title">Difícil</string>
+    <string name="cards_left_format">quedan %d tarjetas</string>
+    <string name="quality_count_format">Difícil %d - Dudo %d - Fácil %d</string>
+    <string name="subtitle_text">Pulsa para estudiar</string>
+    <string name="no_more_cards">No quedan tarjetas</string>
+    <string name="study">ESTUDIA</string>
+    <string name="cardlist">Lista de tarjetas</string>
+    <string name="accept_card_edit_button_title">Aceptar</string>
+    <string name="cancel_card_edit_button_title">Cancelar</string>
+    <string name="card_question_hint">Escribe la pregunta aqui</string>
+    <string name="card_answer_hint">Escribe la respuesta aqui</string>
+    <string name="decks_nav_menu_title">Mazos</string>
+    <string name="study_nav_menu_title">Estudiar</string>
+    <string name="statistics_nav_menu_title">Estadisticas</string>
+    <string name="about_nav_menu_title">Acerca de</string>
+    <string name="author">Juan Martin</string>
+    <string name="app_info">Practica de 4o anho</string>
+    <string name="asignatura">DADM</string>
+    <string name="stats_title">Estadísticas</string>
+    <string name="total_cards">Número total de cartas:</string>
+    <string name="total_decks">Número total de decks:</string>
+    <string name="settings">Ajustes</string>
+    <string name="decks_header">Mazos</string>
+    <string name="max_number_cards">numero máximo de cartas</string>
+    <string name="board_title">Pizarra</string>
+    <string name="board_summary_on">Board summary on</string>
+    <string name="board_summary_off">Board summary off</string>
+    <string name="title_activity_settings">Board summary off</string>
+    <string name="register_button">Registrar</string>
+    <string name="login_button">Acceder</string>
+    <string name="logout_button">Cerrar sesión</string>
+    <string name="error_new_user">Error al crear usuario</string>
+    <string name="nombre_mazo_pista">Nombre del deck</string>
+    <string name="no_deck_selected">Primero selecciona el deck a estudiar</string>
+    <string name="delete_button">Eliminar</string>
+    <string name="info_easiness_format">Dificultad: %s</string>
+    <string name="info_quality_format">Calidad: %s</string>
+    <string name="mail">correo</string>
+    <string name="password">contrasenha</string>
+    <string name="course_name">DADM</string>
+    <string name="id_textview">ID de la tarjeta</string>
+    <string name="add_floating_button">Boton de anhadir carta</string>
+    <string name="deckId_textview">Deck ID</string>
+    <string name="date_text_view">Fecha actual</string>
+    <string name="addDeck_floating_button">Boton de anhadir deck</string>
+    <string name="info_button">+info</string>
+
+</resources>

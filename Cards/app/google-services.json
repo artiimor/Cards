@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1054396859551",
+    "firebase_url": "https://juanmartinpinillacards-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "juanmartinpinillacards",
+    "storage_bucket": "juanmartinpinillacards.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054396859551:android:07d0ecbe62e4df41b34eaa",
+        "android_client_info": {
+          "package_name": "es.uam.eps.dadm.juanmartin.cards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054396859551-97tphtaprk48a65ubrj9nu7ujqqccrmv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "es.uam.eps.dadm.juanmartin.cards",
+            "certificate_hash": "7608a309f80d743f8965d9662eade3ac353242b6"
+          }
+        },
+        {
+          "client_id": "1054396859551-om755k2t1ocmmn3tjm7dcu43nbr4j99p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkU-DSIxpoMV5gHLGI4q48QwJGHgZ5a4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054396859551-om755k2t1ocmmn3tjm7dcu43nbr4j99p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

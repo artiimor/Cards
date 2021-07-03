@@ -1,0 +1,120 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="studyViewModel"
+            type="es.uam.eps.dadm.juanmartin.cards.StudyViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <es.uam.eps.dadm.juanmartin.cards.BoardView
+            android:id="@+id/board"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/info_text_view"
+            android:textSize="20sp"
+            android:text="@{@string/cards_left_format(studyViewModel.cardsLeft)}"
+            android:layout_margin="10dp"
+            tools:text="Número de tarjetas restantes"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/quality_count_view"
+            android:layout_below="@id/info_text_view"
+            android:textSize="20sp"
+            android:text="@{@string/quality_count_format(studyViewModel.difficultCards, studyViewModel.doubtCards, studyViewModel.easyCards)}"
+            android:layout_margin="10dp"
+            tools:text="Contador calidades"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/question_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:text="@{studyViewModel.card.question}"
+            tools:text="Texto para el entorno"/>
+
+        <View
+            android:id="@+id/separator_view"
+            android:layout_below="@id/question_text_view"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_height="1dp"
+            android:visibility="@{studyViewModel.card.answered ? View.VISIBLE : View.INVISIBLE}"
+            android:background="@android:color/darker_gray"/>
+
+
+        <TextView
+            android:id="@+id/answer_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator_view"
+            android:layout_centerHorizontal="true"
+            android:text="@{studyViewModel.card.answer}"
+            android:textSize="20sp"
+            android:visibility="@{studyViewModel.card.answered ? View.VISIBLE : View.INVISIBLE}"
+            tools:text="Respuesta para el entorno"/>
+
+        <Button
+            android:id="@+id/answer_button"
+            android:layout_below="@id/answer_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{studyViewModel.card.answered ? View.INVISIBLE : View.VISIBLE}"
+            android:text="@string/answer_button_text" />
+
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/card_edit_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="@{studyViewModel.card.answered ? View.VISIBLE : View.INVISIBLE}"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/difficult_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/difficult_button_title"
+                android:backgroundTint="@android:color/holo_red_light"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:id="@+id/doubt_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doubt_button_title"
+                android:backgroundTint="@android:color/holo_blue_light"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:id="@+id/easy_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/easy_button_title"
+                android:backgroundTint="@android:color/holo_green_light"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </RelativeLayout>
+</layout>
